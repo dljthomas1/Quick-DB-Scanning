@@ -1,4 +1,3 @@
-This Jupyter Notebook demonstrates the use of my DB Scan script. The script be used to identify 
-clusters defined by the user. Ie, a point is only included in a cluster if the cluster itself 
-reaches a critical mass of points, and the user can set a maximum distance at which point a point
-can no longer be considered a part of the same cluster.
+This Python script provides a quick and easy way to peform DB scanning on geographic coordinates. DB scan differs from K Means clustering in that clusters are not equally size, must reach a minimum critical mass of points to be considered a cluster, and only includes points which are x distance the cluster.
+
+For example, in the accompanying example jupyter notebook, we identify clusters of innovative firms in London that have at elast 8 firms, and where no firm is more than 600m from another firm in the cluster.
